@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css">
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <script src="https://kit.fontawesome.com/0690f76901.js" crossorigin="anonymous"></script>
+  <title>Weather Forcasting</title>
+</head>
+<body>
+  <div id="root">
+  <section id="sec-1">
+    <div id="search">
+      <i id="icon1" class="fas fa-map-marker-alt  fa-3x"></i>
+    <input id="city" type="text" placeholder="Enter city name....">
+    <i id="icon2" class="fas fa-search fa-3x"></i>
+  </div>
+</section>
+
+<section id="sec-2">
+  <div id="weathinfo">
+    <i id="icon3" class="fas fa-street-view fa-3x">Dehradun,In</i><br/>
+    <span id="tem">20.12 C</span>
+    <span id="weathmesg" style="font-size: 25px;">Clear</span><br/>
+    <ul id="ic">
+    <li class="smicon"><i class="far fa-sun"> 6:30 pm</i></li>
+    <li class="smicon"><i class="fas fa-sun"> 7:00 am</i></li>
+    <li class="smicon"><i class="fas fa-wind"> 1234</i></li>
+    <li class="smicon"><i class="fas fa-tint">1234</i></li>
+    <li class="smicon"><i class="fas fa-stopwatch"> 4434</i></li>
+  </ul>
+  </div>
+  <div id="graph">
+    <canvas id="mychart" aria-label="chart" role="img" width="630" height="380"></canvas>
+  </div>
+</section>
+<section id="forecast"> 
+  <h1>Forecast</h1>
+  <div id="card">
+       <div class="crd" id="cd1"></div >
+       <div class="crd" id="cd2"></div >
+       <div class="crd" id="cd3"></div >
+       <div class="crd" id="cd4"></div >
+       <div class="crd" id="cd5"></div>
+  </div>
+</section>
+</div>
+  <script src="./chart.js"></script>
+  <script src="./index.js"></script>
+</body>
+</html>

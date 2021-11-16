@@ -1,0 +1,151 @@
+body{
+  background-color: rgb(219, 192, 228);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+div#search{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 13rem;
+}
+
+input#city{
+  height: 5rem;
+  width: 60rem;
+  outline: none;
+  border-radius: 4rem;
+  padding-left: 8rem;
+  font-size: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input#city::placeholder{
+  color: grey;
+  font-size: 2.5rem;
+}
+
+i#icon1{
+  position: relative;
+  left: 5rem;
+}
+
+i#icon2{
+  position: relative;
+  right: 6rem;
+}
+
+
+section#sec-2{
+  display: flex;
+}
+
+div#weathinfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+span#tem{
+  font-size: 5rem;
+}
+div#graph{
+  width: 60%;
+}
+
+li.smicon{
+  font-size: 2rem;
+  margin: .5rem;
+  list-style: none;
+  margin: 2rem;
+}
+
+section h1{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 3rem 0 1rem 0;
+}
+
+div#card{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+div.crd{
+  width: 16%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 25rem;
+  margin: 1rem;
+  border-radius: 2rem;
+/* box-shadow: .5rem .4rem .5rem .6rem rgb(133, 131, 131); */
+
+  background-color: rgb(192, 192, 192,0.5);
+  /* border: 1px solid red; */
+}
+div.crd > p{
+  font-size: 2.5rem;
+  margin: 2rem;
+}
+div.crd h2{
+margin: 1rem;
+font-size: 1.9rem;
+}
+i#cloud{
+  color: rgb(118, 187, 228);
+}
+i#clear{
+color: rgb(222, 224, 80);
+}
+i#rain{
+  color: rgb(125, 136, 143);
+}
+
+@media only screen and (max-width:768px) {
+  html{
+    font-size: 50%;
+    overflow-x: hidden;
+  }
+  section#sec-2{
+    display: flex;
+    flex-direction: column;
+  }
+  div#weathinfo{
+    text-align: center;
+    width: 100vw;
+  }
+  
+div#card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid black; */
+  justify-content: space-around;
+  height: 180rem;
+}
+
+div.crd{
+width: 70%;
+display: flex;
+flex-direction: column;
+text-align: center;
+justify-content: center;
+box-shadow: .5rem .4rem .5rem .6rem rgb(133, 131, 131);
+}
+}
